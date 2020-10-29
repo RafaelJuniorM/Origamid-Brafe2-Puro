@@ -29,5 +29,109 @@ body {
 
 .header-logo img {
   display: block;
-  margin
+  margin: 40px auto;
+}
+
+.header-menu {
+  border-top: 3px solid #d6d3c8;
+  border-bottom: 3px solid #d6d3c8;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+.header-menu li {
+  display: inline-block;
+}
+
+.header-menu li a {
+  display: block;
+  padding: 5px 10px 5px 0;
+  text-decoration: none;
+  color: #252525;
+  font-size: 1.125em;
+}
+
+.header-menu li a::before { /* Acrescenta o asterisco na frente de cada menu */
+  content: '°';
+  display: inline-block;
+  padding-right: 10px ;
+}
+
+.header-menu li:first-child a::before {
+  /* Retira o asterisco do primeiro menu (Cafés)*/
+  content: '';
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Filtro (sidebar) */
+
+.filtro {
+  background: #e7e4d8;
+  border: 3px solid #d6d3c8;
+  width: 300px;
+  margin: 0 10px;
+  padding: 20px;
+  float: left;
+}
+
+.filtro h2 {
+  font-size: 1.125em;
+  padding: 10px 0;
+}
+.filtro ul {
+  border-top: 3px solid #c0beb4;
+  border-bottom: 3px solid #c0beb4;
+  padding: 10px 0;
+}
+
+.filtro li {
+  font-size: 1.125em;
+  font-style: italic;
+  line-height: 2;
+}
+
+.filtro li::after {
+  /* cria-se o quadrado para marcaçao do filtro */
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #c0beb4;
+  float: right;
+  margin-top: 5px;
+}
+
+.sabor {
+  /* ele ira esconder tudo aquilo que sair do container do ul */
+  overflow: hidden;
+}
+
+.sabor span {
+  display: inline-block;
+  text-indent: -200px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: currentColor; /* variavel */
+  vertical-align: middle;
+}
+
+.sabor-3 {
+  color: #492901;
+  box-shadow: 20px 0 0 0 currentColor, 40px 0 0 0 currentColor;
+}
+
+.sabor-4 {
+  color: #c17139;
+  box-shadow: 20px 0 0 0 currentColor, 40px 0 0 0 currentColor, 60px 0 0 0 currentColor;
+}
+
+.sabor-5 {
+  color: #d7a54d;
+  box-shadow: 20px 0 0 0 currentColor, 40px 0 0 0 currentColor, 60px 0 0 0 currentColor, 80px 0 0 0 currentColor;
 }
